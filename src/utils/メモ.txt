@@ -1,0 +1,7 @@
+fetchでURLを受け取ったら(1行目)
+URLをresで受け取り、json形式で返す(2行目)
+Json化したものをdataで受け取り、resolve関数で元の呼び出し個所に返す。
+
+fetch(url)
+.then((res) => res.json())
+.then((data) => resolve(data));
